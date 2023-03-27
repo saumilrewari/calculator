@@ -30,7 +30,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: saumilrewari/test
-        path: /Users/runner/work/calculator/calculator
+        path: /Users/runner/work/calculator/calculator/
         submodules: recursive
 
     - name: Checking File Exist
