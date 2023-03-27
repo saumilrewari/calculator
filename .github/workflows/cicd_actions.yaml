@@ -36,7 +36,7 @@ jobs:
     - name: Checking File Exist
       uses: andstor/file-existence-action@v2
       with:
-        files: "test/opsis_project, test/opsis_project/requirements.txt, test.apk"
+        files: "test/opsis_project, test/opsis_project/requirements.txt"
         
     - name: File exists
       if: steps.check_files.outputs.files_exists == 'true'
