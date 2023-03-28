@@ -12,8 +12,8 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: checkout
-      uses: actions/checkout@v3
+#     - name: checkout
+#       uses: actions/checkout@v3
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
@@ -56,3 +56,15 @@ jobs:
       with:
         api-level: 29
         script: pytest -k="test_pass"
+        
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: infocusp123@gmail.com
+        password: kqsasbllftsuezid
+        subject: Github Actions job result
+        to: saumil@infocusp.com
+        from: test indocusp
+        body: Build job of ${{github.repository}} completed successfully!
