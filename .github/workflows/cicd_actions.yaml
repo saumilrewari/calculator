@@ -12,8 +12,8 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-#     - name: checkout
-#       uses: actions/checkout@v3
+    - name: checkout
+      uses: actions/checkout@v3
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
@@ -28,14 +28,14 @@ jobs:
         path: /Users/runner/work/calculator/calculator/test
         submodules: recursive
 
-#     - name: Checking File Exist
-#       uses: andstor/file-existence-action@v2
-#       with:
-#         files: "test/opsis_project, test/opsis_project/requirements.txt"
+    - name: Checking File Exist
+      uses: andstor/file-existence-action@v2
+      with:
+        files: "test/opsis_project, test/opsis_project/requirements.txt"
         
-#     - name: File exists
-#       if: steps.check_files.outputs.files_exists == 'true'
-#       run: echo All files exists!
+    - name: File exists
+      if: steps.check_files.outputs.files_exists == 'true'
+      run: echo All files exists!
       
     - name: Install and Run Appium Server
       run: |
