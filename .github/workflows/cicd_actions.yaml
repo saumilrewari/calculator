@@ -63,9 +63,9 @@ jobs:
       with:
         server_address: smtp.gmail.com
         server_port: 465
-        username: infocusp123@gmail.com
-        password: kqsasbllftsuezid
+        username: tinfocusp@gmail.com
+        password: vnoppopmrkffxxvn
         subject: Github Actions job result
         to: saumil@infocusp.com
         from: test indocusp
-        body: Build job of ${{github.repository}} completed successfully!
+        body: Build job of Android completed successfully!
