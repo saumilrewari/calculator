@@ -12,8 +12,8 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-#     - name: checkout
-#       uses: actions/checkout@v3
+    - name: checkout
+      uses: actions/checkout@v3
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
@@ -67,5 +67,5 @@ jobs:
         password: vnoppopmrkffxxvn
         subject: Github Actions job result
         to: saumil@infocusp.com
-        from: test indocusp
+        from: test infocusp
         body: Build job of Android completed successfully!
