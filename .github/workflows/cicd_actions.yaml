@@ -57,15 +57,15 @@ jobs:
         api-level: 29
         script: pytest -k="test_pass"
         
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v3
-      if: always()
-      with:
-        server_address: smtp.gmail.com
-        server_port: 465
-        username: tinfocusp@gmail.com
-        password: vnoppopmrkffxxvn
-        subject: Github Actions job result
-        to: saumil@infocusp.com
-        from: test infocusp
-        body: Build job of Android completed successfully!
+#     - name: Send mail
+#       uses: dawidd6/action-send-mail@v3
+#       if: always()
+#       with:
+#         server_address: smtp.gmail.com
+#         server_port: 465
+#         username: tinfocusp@gmail.com
+#         password: vnoppopmrkffxxvn
+#         subject: Github Actions job result
+#         to: saumil@infocusp.com
+#         from: test infocusp
+#         body: Build job of Android completed successfully!
