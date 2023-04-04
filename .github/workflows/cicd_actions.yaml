@@ -24,7 +24,7 @@ jobs:
     - name: Cloning Test Repo
       uses: actions/checkout@v2
       with:
-        repository: saumilrewari/test
+        repository: sylfph/QA_Automation
         path: /Users/runner/work/calculator/calculator/test
         submodules: recursive
 
