@@ -39,8 +39,8 @@ jobs:
       
     - name: Install and Run Appium Server
       run: |
-        chmod +x test/RunAppiumServer.sh
-        sh test/RunAppiumServer.sh
+        chmod +x QA_Automation/RunAppiumServer.sh
+        sh QA_Automation/RunAppiumServer.sh
 
     - name: Install Python
       uses: actions/setup-python@v4
