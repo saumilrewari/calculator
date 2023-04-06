@@ -55,7 +55,7 @@ jobs:
       uses: ReactiveCircus/android-emulator-runner@v2.27.0
       with:
         api-level: 29
-        script: pytest -m="bvt"
+        script: pytest -V -S -m="bvt" --html=report.html
         
 #     - name: Send mail
 #       uses: dawidd6/action-send-mail@v3
